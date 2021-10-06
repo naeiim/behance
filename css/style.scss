@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+// #goto-dashboard {
+//   position: absolute;
+//   top: 3rem;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   font-size: 3rem;
+//   background-color: #333;
+//   color: white;
+//   padding: 1rem 2rem;
+//   text-decoration: none;
+// }
+
+// #goto-dashboard:hover {
+//   background-color: #000;
+// }
+
+.login {
+  width: 50rem;
+  height: 50rem;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232323;
+
+  .user-profile-pic {
+    width: 15rem;
+    height: 15rem;
+    background: rgb(248, 243, 243);
+    display: grid;
+    place-items: center;
+    i.fa-user {
+      font-size: 12rem;
+      color: rgb(102, 102, 102);
+    }
+  }
+  .username-input-field,
+  .password-input-field {
+    span {
+      background-color: seagreen;
+      display: inline-block;
+      padding: 1rem 1.8rem;
+      height: 100%;
+      i {
+        font-size: 1.8rem;
+        color: #fff;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .lock-taala {
+      background-color: rgb(202, 202, 0);
+    }
+
+    input {
+      font-size: 1.8rem;
+      padding: 1rem 2rem 1rem 1rem;
+      margin-left: 0.2rem;
+      border: none;
+    }
+  }
+  div:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    button {
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+      border: none;
+      color: white;
+      &#lostpass-btn {
+        background-color: red;
+      }
+      &#login-btn {
+        background-color: seagreen;
+      }
+    }
+  }
+}
