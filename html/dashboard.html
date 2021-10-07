@@ -4,15 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/dashboard.css" />
     <title>Dashboard</title>
   </head>
   <body>
     <!-- <a href="./index.html" id="goto-login">Login</a> -->
     <div class="grid">
-      <div class="sidebar"></div>
-      <div class="main-side"></div>
+      <div class="sidebar">
+        <!-- SIDEBAR STARTS HERE -->
+        <div class="user-info">
+          <div class="profile-pic"></div>
+          <div>
+            <p>Welcome</p>
+            <p>syed haseeb</p>
+          </div>
+        </div>
+        <h2 id="generall">General</h2>
+        <h3>Dashboard</h3>
+        <h3>User Management</h3>
+        <h3>Module Management</h3>
+        <h3>Permission Management</h3>
+        <h3>Role Management</h3>
+        <h3>Product category MGMT</h3>
+        <h3>Product Management</h3>
+        <h3>Sales Management</h3>
+        <h3>Expenses Management</h3>
+        <h3>Purchase Management</h3>
+        <h3>Bank Transaction</h3>
+        <!-- SIDEBAR ENDS HERE -->
+      </div>
+
+      <div class="main-side">
+        <div class="top-bar">
+          <!-- TOP BAR STARTS HERE -->
+          <i class="fas fa-bars"></i>
+          <div class="top-bar-user-info">
+            <i class="fas fa-circle"></i>
+            <p>syed haseeb</p>
+            <i class="fas fa-power-off"></i>
+          </div>
+          <!-- TOP BAR ENDS HERE -->
+        </div>
+        <div class="four">
+          <!-- Top-four STARTS here -->
+          <div class="containerr container">
+            <div class="one">
+              <i class="fas fa-circle"></i>
+              <p class="numberr">22915</p>
+              <p>Store Worth</p>
+            </div>
+            <div class="two">
+              <i class="fas fa-circle"></i>
+              <p class="numberr">0</p>
+              <p>Today Sales Revenue</p>
+            </div>
+            <div class="three">
+              <i class="fas fa-circle"></i>
+              <p class="numberr">0</p>
+              <p>Today's Profit</p>
+            </div>
+            <div class="fourr">
+              <i class="fas fa-circle"></i>
+              <p class="numberr">3</p>
+              <p>Total No. of Product</p>
+            </div>
+          </div>
+          <!-- Top-four ENDS here -->
+        </div>
+        <div class="logged-in-success container">
+          <p>You are successfully logged in.</p>
+        </div>
+        <!-- MAIN=SIDE ENDS HRERE -->
+      </div>
+      <!-- GRID ENDS HERE -->
     </div>
+
     <script src="../javascript/dashboard.js"></script>
   </body>
 </html>

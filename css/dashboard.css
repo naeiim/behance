@@ -14,10 +14,16 @@ body {
   height: 100vh;
   background-color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
 }
 
 .grid {
@@ -25,15 +31,159 @@ button:hover {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 12% 88%;
-      grid-template-columns: 12% 88%;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
 }
 
 .grid .sidebar {
-  background-color: #555;
+  background-color: #333;
+  padding-left: 1.5rem;
 }
 
 .grid .main-side {
   background-color: #ddd;
+}
+
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.user-info .profile-pic {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: orangered;
+  margin-right: 1.5rem;
+}
+
+.sidebar #generall {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar h3 {
+  padding-left: 1.8rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar h3::before {
+  content: "o";
+  padding-right: 0.5rem;
+}
+
+.main-side .top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.main-side .top-bar .fa-circle {
+  font-size: 3rem;
+}
+
+.main-side .top-bar .top-bar-user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-side .top-bar .top-bar-user-info p {
+  padding: 0 1rem;
+}
+
+.four {
+  margin-top: 1rem;
+}
+
+.four .containerr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2rem;
+}
+
+.one,
+.two,
+.three,
+.fourr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 5rem;
+  border-radius: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 2rem;
+}
+
+.one p.numberr,
+.two p.numberr,
+.three p.numberr,
+.fourr p.numberr {
+  padding: 1.5rem 0;
+  font-size: 2.5rem;
+}
+
+.one,
+.three {
+  background-color: #f12929;
+}
+
+.two,
+.fourr {
+  background-color: #3939ee;
+}
+
+.fourr {
+  margin-right: 0;
+}
+
+.logged-in-success {
+  background-color: seagreen;
+  margin-top: 2rem;
+  border-radius: 0.2rem;
+}
+
+.logged-in-success p {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  padding-left: 2rem;
 }
 /*# sourceMappingURL=dashboard.css.map */
