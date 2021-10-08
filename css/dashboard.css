@@ -12,7 +12,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background-color: #ddd;
+  background-color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
@@ -36,12 +36,8 @@ button:hover {
 }
 
 .grid .sidebar {
-  background-color: #333;
+  background-color: #082a50;
   padding-left: 1.5rem;
-}
-
-.grid .main-side {
-  background-color: #ddd;
 }
 
 .user-info {
@@ -59,29 +55,69 @@ button:hover {
 }
 
 .user-info .profile-pic {
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
-  background-color: orangered;
+  background-color: #ccc;
+  border: 5px solid white;
   margin-right: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+  color: red;
+  color: #5b77f1;
+}
+
+.user-info p:last-child {
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sidebar {
+  height: 100vh;
+  position: relative;
 }
 
 .sidebar #generall {
   font-size: 1.2rem;
   text-transform: uppercase;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .sidebar h3 {
   padding-left: 1.8rem;
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
 }
 
-.sidebar h3::before {
-  content: "o";
-  padding-right: 0.5rem;
+.side-bar-bottom-icons {
+  font-size: 2rem;
+  background-color: #071c35;
+  padding: 1.3rem 1rem;
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  color: #aaa;
+}
+
+.side-bar-bottom-icons i:hover {
+  cursor: pointer;
 }
 
 .main-side .top-bar {
@@ -95,7 +131,8 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  padding: 1rem;
+  border-bottom: 1px solid grey;
+  padding: 2rem 2.5rem;
   color: #000;
   font-size: 1.6rem;
 }
@@ -152,6 +189,14 @@ button:hover {
   margin-right: 2rem;
 }
 
+.one p,
+.two p,
+.three p,
+.fourr p {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
 .one p.numberr,
 .two p.numberr,
 .three p.numberr,
@@ -162,12 +207,12 @@ button:hover {
 
 .one,
 .three {
-  background-color: #f12929;
+  background-color: #ec5757;
 }
 
 .two,
 .fourr {
-  background-color: #3939ee;
+  background-color: #5b77f1;
 }
 
 .fourr {
@@ -175,7 +220,7 @@ button:hover {
 }
 
 .logged-in-success {
-  background-color: seagreen;
+  background-color: #42ac70;
   margin-top: 2rem;
   border-radius: 0.2rem;
 }
@@ -185,5 +230,159 @@ button:hover {
   font-size: 1.2rem;
   padding: 2rem 0;
   padding-left: 2rem;
+}
+
+.sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.sales div {
+  width: 100%;
+}
+
+.sales div.left {
+  margin-right: 2rem;
+}
+
+.sales > div {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 2rem;
+}
+
+.sales {
+  color: #4b4b4b;
+}
+
+.sales .sales-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid grey;
+  border-width: 0.21rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sales .sales-heading > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sales .sales-heading > div p {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.sales .sales-heading > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.sales .sales-heading > p .fa-wrench {
+  margin: 0 1.5rem;
+}
+
+.sales .sales-heading h2 {
+  font-size: 2.3rem;
+}
+
+.make-sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #1a0c57;
+}
+
+.make-sales input {
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border: 1px solid grey;
+}
+
+.make-sales label {
+  font-size: 1.6rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.make-sales select {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  border: none;
+  border: 1px solid grey;
+}
+
+.make-sales .sales-status {
+  margin: 1rem 0;
+}
+
+.make-sales #add-to-cart,
+.make-sales .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin-top: 1.55rem;
+  font-size: 1.7rem;
+  border: none;
+  background-color: #536ee9;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid grey;
+  font-size: 1.6rem;
+  padding: 1rem;
+  padding-right: 3rem;
+}
+
+.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin-top: 1.55rem;
+  font-size: 1.7rem;
+  border: none;
+  background-color: #536ee9;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.btn#confirm-sales {
+  margin-left: 15rem;
 }
 /*# sourceMappingURL=dashboard.css.map */
