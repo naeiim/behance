@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: lightgreen;
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: rgba(17, 14, 212, 0.8);
+  color: #fff;
+  position: relative;
+
+  .welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .profile-picture {
+      width: 10rem;
+      height: 10rem;
+      background-image: url("../imagesForWebsite/child17.jpg");
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      border: 0.5rem solid #fff;
+    }
+    div:nth-child(2) {
+      font-size: 1.8rem;
+      color: #fff;
+      h3:first-child {
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+  .sidebar-navigation {
+    width: 90%;
+    margin: 2rem auto 2rem auto;
+
+    div {
+      margin-bottom: 2rem;
+
+      strong {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      i {
+        margin-right: 1.3rem;
+      }
+    }
+  }
+
+  .side-bar-bottom-icons {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(10, 8, 153);
+    padding: 1.5rem 0;
+    width: 100%;
+
+    i {
+      font-size: 2.3rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+main {
+  .top-bar {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    height: 7rem;
+    align-items: center;
+    border-bottom: 0.2rem solid black;
+
+    > div {
+      display: flex;
+      align-items: center;
+
+      .profile-picture-small {
+        width: 5rem;
+        height: 5rem;
+        background-image: url("../imagesForWebsite/child17.jpg");
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        border: 0.5rem solid #fff;
+      }
+
+      strong {
+        margin: 0 1rem 0 1rem;
+      }
+    }
+  }
+}
