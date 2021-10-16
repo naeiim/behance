@@ -1,0 +1,90 @@
+body {
+  background-color: transparent;
+}
+
+.container {
+  width: 95%;
+}
+
+.main-area {
+  .expenses-management {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    h2 {
+      color: darkgrey;
+      font-size: 3rem;
+    }
+
+    .import-new-expenses-btns {
+      button {
+        background-color: rgb(55, 177, 55);
+        color: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0.3rem;
+        font-size: 1.7rem;
+        &:first-child {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.list-expenses {
+  margin-top: 3.5rem;
+  background-color: lightgrey;
+  padding: 3rem;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.2rem solid grey;
+    padding-bottom: 1.5rem;
+
+    i:nth-child(2) {
+      margin: 0 1.5rem;
+    }
+  }
+  .entries-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+    .show-entries {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      input {
+        padding: 0.3rem 0;
+        text-align: center;
+      }
+    }
+    .searchh {
+      display: flex;
+      justify-content: flex-end;
+      input {
+        border: none;
+        border: 1px solid white;
+        margin-left: 1rem;
+      }
+    }
+  }
+  .tablee {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    td,
+    th {
+      border: 2px solid white;
+      border-collapse: collapse;
+      padding: 1rem 2rem;
+    }
+  }
+}

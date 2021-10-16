@@ -35,7 +35,7 @@ body {
 
   .welcome {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
     margin-top: 2rem;
@@ -49,13 +49,14 @@ body {
       background-size: cover;
       background-position: center;
       border: 0.5rem solid #fff;
+      margin-right: 1rem;
     }
     div:nth-child(2) {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       color: #fff;
-      h3:first-child {
-        margin-bottom: 0.7rem;
-      }
+      // h3:first-child {
+      // margin-bottom: 0.2rem;
+      // }
     }
   }
   .sidebar-navigation {
@@ -64,8 +65,14 @@ body {
 
     div {
       margin-bottom: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      // background-color: orange;
+      align-items: center;
 
-      strong {
+      h3 {
+        font-size: 1.3rem;
+        text-align: left;
         &:hover {
           cursor: pointer;
         }
@@ -89,7 +96,7 @@ body {
     width: 100%;
 
     i {
-      font-size: 2.3rem;
+      font-size: 1.8rem;
       &:hover {
         cursor: pointer;
       }
@@ -97,7 +104,7 @@ body {
   }
 }
 
-main {
+.main-area {
   .top-bar {
     width: 100%;
     background-color: #fff;
@@ -122,8 +129,9 @@ main {
         border: 0.5rem solid #fff;
       }
 
-      strong {
+      h3 {
         margin: 0 1rem 0 1rem;
+        font-size: 1.2rem;
       }
     }
   }

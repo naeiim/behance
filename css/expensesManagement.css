@@ -1,0 +1,122 @@
+body {
+  background-color: transparent;
+}
+
+.container {
+  width: 95%;
+}
+
+.main-area .expenses-management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.main-area .expenses-management h2 {
+  color: darkgrey;
+  font-size: 3rem;
+}
+
+.main-area .expenses-management .import-new-expenses-btns button {
+  background-color: #37b137;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.7rem;
+}
+
+.main-area .expenses-management .import-new-expenses-btns button:first-child {
+  margin-right: 3rem;
+}
+
+.list-expenses {
+  margin-top: 3.5rem;
+  background-color: lightgrey;
+  padding: 3rem;
+}
+
+.list-expenses .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.2rem solid grey;
+  padding-bottom: 1.5rem;
+}
+
+.list-expenses .heading i:nth-child(2) {
+  margin: 0 1.5rem;
+}
+
+.list-expenses .entries-top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.list-expenses .entries-top-bar .show-entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-expenses .entries-top-bar .show-entries input {
+  padding: 0.3rem 0;
+  text-align: center;
+}
+
+.list-expenses .entries-top-bar .searchh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.list-expenses .entries-top-bar .searchh input {
+  border: none;
+  border: 1px solid white;
+  margin-left: 1rem;
+}
+
+.list-expenses .tablee {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.list-expenses .tablee td,
+.list-expenses .tablee th {
+  border: 2px solid white;
+  border-collapse: collapse;
+  padding: 1rem 2rem;
+}
+/*# sourceMappingURL=expensesManagement.css.map */

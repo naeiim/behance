@@ -41,8 +41,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -58,15 +59,12 @@ body {
   background-size: cover;
   background-position: center;
   border: 0.5rem solid #fff;
+  margin-right: 1rem;
 }
 
 .sidebar .welcome div:nth-child(2) {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #fff;
-}
-
-.sidebar .welcome div:nth-child(2) h3:first-child {
-  margin-bottom: 0.7rem;
 }
 
 .sidebar .sidebar-navigation {
@@ -76,9 +74,23 @@ body {
 
 .sidebar .sidebar-navigation div {
   margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.sidebar .sidebar-navigation div strong:hover {
+.sidebar .sidebar-navigation div h3 {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.sidebar .sidebar-navigation div h3:hover {
   cursor: pointer;
 }
 
@@ -103,14 +115,14 @@ body {
 }
 
 .sidebar .side-bar-bottom-icons i {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
 .sidebar .side-bar-bottom-icons i:hover {
   cursor: pointer;
 }
 
-main .top-bar {
+.main-area .top-bar {
   width: 100%;
   background-color: #fff;
   display: -webkit-box;
@@ -127,7 +139,7 @@ main .top-bar {
   border-bottom: 0.2rem solid black;
 }
 
-main .top-bar > div {
+.main-area .top-bar > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +148,7 @@ main .top-bar > div {
           align-items: center;
 }
 
-main .top-bar > div .profile-picture-small {
+.main-area .top-bar > div .profile-picture-small {
   width: 5rem;
   height: 5rem;
   background-image: url("../imagesForWebsite/child17.jpg");
@@ -146,7 +158,8 @@ main .top-bar > div .profile-picture-small {
   border: 0.5rem solid #fff;
 }
 
-main .top-bar > div strong {
+.main-area .top-bar > div h3 {
   margin: 0 1rem 0 1rem;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=structure.css.map */
