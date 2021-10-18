@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(197, 82, 187);
+  color: #fff;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2rem solid grey;
+  padding-bottom: 1.5rem;
+  border-bottom-color: #fff;
+  border-bottom-width: 0.3rem;
+  padding: 2rem;
+
+  i:nth-child(2) {
+    margin: 0 1.5rem;
+  }
+}
+
+.top-purchase-management {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    font-size: 3.2rem;
+    color: #fff;
+  }
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  button,
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    color: green;
+  }
+}
+
+.inputss {
+  margin-top: 3rem;
+}
+input,
+select {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  border: none;
+  margin: 0 3rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  color: green;
+}
+.tablee {
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: 0.3rem solid red;
+  border-collapse: collapse;
+  th {
+    border: 0.3rem solid salmon;
+  }
+  tr {
+    border-collapse: collapse;
+    border: 0.3rem solid orange;
+  }
+  td {
+    border: 0.3rem solid gold;
+    border-collapse: collapse;
+  }
+  td,
+  tr,
+  th {
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+  }
+}

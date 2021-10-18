@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/structure.css" />
-    <link rel="stylesheet" href="../css/productManagement.css" />
+    <link rel="stylesheet" href="../css/purchaseManagement.css" />
     <title>Working</title>
   </head>
   <body>
@@ -103,86 +103,58 @@
             <i class="fas fa-power-off"></i>
           </div>
         </div>
-        <div class="heading-product-management container">
-          <h2>Product Management</h2>
-          <button class="create-product-btn">Create Product</button>
+        <div class="top-purchase-management container">
+          <h2>Purchase Management</h2>
+          <button>New Purchase</button>
         </div>
-        <div class="list-expenses container">
+        <div class="container">
           <div class="heading">
-            <h3>Listing Expenses Details</h3>
+            <h3>Remaining to purchase details</h3>
             <div>
               <i class="fas fa-angle-up"></i>
               <i class="fas fa-wrench"> </i>
               <i class="fas fa-times"></i>
             </div>
           </div>
-
-          <div class="entries-top-bar">
-            <div class="show-entries">
-              <h4>
-                Show
-                <input type="number" value="10" min="1" max="50" />
-                entries
-              </h4>
-            </div>
-            <div class="searchh">
-              <h4>Search:</h4>
-              <input type="text" />
-            </div>
-          </div>
-
           <div class="tablee">
             <table>
               <thead>
                 <tr>
-                  <th>S.N.</th>
-                  <th>Expenses Name</th>
-                  <th>Party Name</th>
-                  <th>Total Amount</th>
-                  <th>Paid Amount</th>
-                  <th>Due Amount</th>
-                  <th>Product Name</th>
-                  <th>Purchase Date</th>
-                  <th class="last-box">Action</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
+                  <th>name</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
-                  <td>Refereshmenet Expenses</td>
-                  <td>haseeb</td>
-                  <td>120</td>
-                  <td>120</td>
-                  <td>0</td>
-                  <td>tea</td>
-                  <td>2020-01-18 05:44:01</td>
-                  <td class="last-box">Edit Delete</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Bill Payment</td>
-                  <td>Subusu</td>
-                  <td>4000</td>
-                  <td>4000</td>
-                  <td>0</td>
-                  <td>Internet</td>
-                  <td>2017-10-28 02:14:01</td>
-                  <td class="last-box">Edit Delete</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Rent Expenses</td>
-                  <td>House Owner</td>
-                  <td>50000</td>
-                  <td>5000</td>
-                  <td>45000</td>
-                  <td>home</td>
-                  <td>2021-11-28 15:23:13</td>
-                  <td class="last-box">Edit Delete</td>
+                  <td colspan="3">Grand total</td>
+                  <td colspan="1">Rs0</td>
+                  <td colspan="1">Rs0</td>
+                  <td colspan="1">Rs0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <div class="inputss">
+            <input type="text" placeholder="pick start date" />
+            <input type="text" placeholder="pick end date" />
+            <select name="" id="">
+              <option value="">Select Purchase Type</option>
+            </select>
+            <button class="btn">Import Report</button>
+          </div>
+        </div>
       </main>
     </div>
   </body>

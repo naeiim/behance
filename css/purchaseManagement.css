@@ -1,0 +1,113 @@
+body {
+  background-color: #c552bb;
+  color: #fff;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.2rem solid grey;
+  padding-bottom: 1.5rem;
+  border-bottom-color: #fff;
+  border-bottom-width: 0.3rem;
+  padding: 2rem;
+}
+
+.heading i:nth-child(2) {
+  margin: 0 1.5rem;
+}
+
+.top-purchase-management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.top-purchase-management h2 {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.top-purchase-management button,
+.top-purchase-management .btn {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  color: green;
+}
+
+.inputss {
+  margin-top: 3rem;
+}
+
+input,
+select {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  border: none;
+  margin: 0 3rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  color: green;
+}
+
+.tablee {
+  margin-top: 3rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table {
+  border: 0.3rem solid red;
+  border-collapse: collapse;
+}
+
+table th {
+  border: 0.3rem solid salmon;
+}
+
+table tr {
+  border-collapse: collapse;
+  border: 0.3rem solid orange;
+}
+
+table td {
+  border: 0.3rem solid gold;
+  border-collapse: collapse;
+}
+
+table td,
+table tr,
+table th {
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+}
+/*# sourceMappingURL=purchaseManagement.css.map */
